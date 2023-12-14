@@ -15,11 +15,11 @@ if (isset($_GET['id'])) {
     $cmdDelete = "DELETE FROM recepies WHERE id = $idToDelete";
     $resultDelete = mysqli_query($con, $cmdDelete);
     if ($resultDelete) {
-        header('location: recepie.php?status=delete_success');
+        header('location: index.php?status=delete_success');
     } else {
-        header('location: recepie.php?status=delete_error');
+        header('location: index.php?status=delete_error');
     }
 } else {
     // Handle the case where 'id' is not set
-    header('location: recepie.php');
+    header('location: index.php');
 } ?>
