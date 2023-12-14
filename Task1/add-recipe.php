@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
   $sql = "INSERT INTO recepies (name, ingredient, method, file, duration) VALUES ('$name', '$ing', '$method', '$image_file', '$time')";
 
   if (mysqli_query($con, $sql)) {
-      header('location:recepie.php?status=true');
+      header('location:index.php?status=true');
   }
 }
 ?>
