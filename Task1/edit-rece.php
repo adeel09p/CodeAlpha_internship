@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 //   $sql ="insert into recepies(name , ingredient , method , file , duration)values('$name','$ing', '$method','$image_file','$time')";
 $sql ="UPDATE recepies SET name ='$name', ingredient = '$ing',file ='$image_file' , method='$method', duration='$time' where id ='$idupdate'";
 if(mysqli_query($con , $sql)){
-  header('location:recepie.php?status=true');
+  header('location:index.php?status=true');
 }
 }
 ?>
