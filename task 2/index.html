@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <h1>Social Media Dashboard</h1>
+
+        <div class="tile-container">
+            <div class="tile">
+                <h2>Today's Stats</h2>
+                <p>Facebook Followers: 100</p>
+                <p>LinkedIn Connections: 80</p>
+                <p>Twitter Followers: 50</p>
+                <p>YouTube Subscribers: 200</p>
+            </div>
+            <div class="tile">
+                <h2>Weekly Stats</h2>
+                <p>Facebook Followers: 750</p>
+                <p>LinkedIn Connections: 600</p>
+                <p>Twitter Followers: 400</p>
+                <p>YouTube Subscribers: 1500</p>
+            </div>
+            <div class="tile">
+                <h2>Monthly Stats</h2>
+                <p>Facebook Followers: 3000</p>
+                <p>LinkedIn Connections: 2500</p>
+                <p>Twitter Followers: 1800</p>
+                <p>YouTube Subscribers: 5000</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="updateStats('week')">Week</button>
+            <button onclick="updateStats('month')">Month</button>
+            <button onclick="updateStats('year')">Year</button>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="facebookChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="linkedinChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="twitterChart" width="400" height="200"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="youtubeChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
