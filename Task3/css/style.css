@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+
+    width: 100%;
+    background-color: #e7f5ff;
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 100000000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 10px;
+}
+.start{
+    width: 100%;
+    display: flex;
+     justify-content: space-between;
+}
+.menu {
+    display: flex;
+}
+
+.tbl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -11111111111;
+}
+.menu ul li h4:hover {
+    background-color: black;
+    color: white;
+
+}
+
+/* .menu ul li {
+  padding: 10px;
+} */
+body {
+    background-color: #a5d8ff;
+}
+
+
+
+.hero {
+    display: grid;
+    grid-column: 3;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    width: 100%;
+
+
+
+
+}
+
+.hero .one {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #a5d8ff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.hero .one .imag img {
+    width: 300px;
+    height: 200px;
+}
+.table th{
+    color: white;
+    background-color: darkblue;
+    
+}
+/* .ing ul,
+ol {
+ 
+} */
+
+.menu-icon {
+    display: none;
+
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu ul li h4 {
+    padding: 20px;
+    transition: 3s;
+    border-radius: 5px;
+}
+
+.menu ul li h4:hover {
+    background-color: #364fc7;
+    color: white;
+}
+@media screen and (max-width: 660px) {
+    /* ... other styles ... */
+
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        font-weight: bold;
+    }
+
+    .table a {
+        /* Add styles for anchor links within the table */
+        text-decoration: underline;
+        color: blue;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        position: sticky;
+        background-color: #e7f5ff;
+        width: 100%;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* @media screen and (max-width: 660px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .hero .one .imag img {
+        flex-grow: 1;
+        height: 200px;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: none;
+    }
+} */
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    /* height: 100dvh; */
+}
+
+.issue-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    height: fit-content;
+}
+
+.issue-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.issue-form input,
+.issue-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.issue-form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.issue-form button:hover {
+    background-color: #45a049;
+}
